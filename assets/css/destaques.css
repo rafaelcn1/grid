@@ -49,10 +49,6 @@
     /* Será aplicado apenas no filho na posição 2 da classe destaques__secundario*/
     background-image: url("../img/pubg.jpg");
     /* Definidindo uma imagem como background */
-    grid-column: 4 / 4;
-    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
-    grid-row: 1 / 1;
-    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
     background-repeat: no-repeat;
     /* Informando que a imagem de background não se repita */
     background-size: cover;
@@ -71,10 +67,6 @@
     /* Informando que a imagem de background ficará com a posição centralizada */
     /* Informando que a imagem de background preencha todo espaço reservado a ela */
     /* Informando que a imagem de background não se repita */
-    grid-column: 4 / 4;
-    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
-    grid-row: 2 / 2;
-    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
 }
 
 .destaques__secundario:nth-child(4) {
@@ -84,10 +76,6 @@
     /* Informando que a imagem de background ficará com a posição centralizada */
     /* Informando que a imagem de background preencha todo espaço reservado a ela */
     /* Informando que a imagem de background não se repita */
-    grid-column: 4 / 4;
-    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
-    grid-row: 3 / 3;
-    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
 }
 
 .destaques__secundario:nth-child(5) {
@@ -97,10 +85,6 @@
     /* Informando que a imagem de background ficará com a posição centralizada */
     /* Informando que a imagem de background preencha todo espaço reservado a ela */
     /* Informando que a imagem de background não se repita */
-    grid-column: 3 / 3;
-    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
-    grid-row: 3 / 3;
-    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
 }
 
 .destaques__categorias {

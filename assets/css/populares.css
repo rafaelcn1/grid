@@ -19,12 +19,6 @@
     /* Criando o nome dos templates */
     grid-template-columns: 100%;
     /* Defenindo o tamanho da coluna */
-    grid-template-rows: 173px auto;
-    /* Definindo o tamanho das linhas, a primera terá o tamanho de 173px e a segunda auto*/
-    margin-right: 1rem;
-    /* Espaçamento externo de uma linha */
-    width: calc(20% - 1rem);
-    /* Definindo a largura dos cards em 20% menos 1rem da tela, com isso irá gerar um espaçamento entre os cards */
 }
 
 .populares__card:last-child {

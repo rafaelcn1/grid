@@ -1,0 +1,94 @@
+/* Se o site for menor que 0 no caso celulares vai mudar a cor */
+
+@media screen and (min-width: 0) {
+    .destaques__principal,
+    .destaques__categorias {
+        grid-column: 1 / 5;
+    }
+    .destaques__secundario:nth-child(2),
+    .destaques__secundario:nth-child(3),
+    .destaques__secundario:nth-child(4),
+    .destaques__secundario:nth-child(5) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .populares__conteudo {
+        flex-direction: column;
+    }
+    .populares__card {
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
+}
+
+
+/* Se o site for menor que 768 no caso celulares vai mudar a cor */
+
+@media screen and (min-width: 768px) {
+    .destaques__principal {
+        grid-column: 1 / 4;
+    }
+    .destaques__secundario:nth-child(2) {
+        display: flex;
+        grid-column: 4 / 4;
+        /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+        grid-row: 1 / 1;
+        /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+    }
+    .destaques__secundario:nth-child(3) {
+        display: flex;
+        grid-column: 4 / 4;
+        /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+        grid-row: 2 / 2;
+        /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+    }
+    .destaques__secundario:nth-child(4) {
+        display: flex;
+        grid-column: 4 / 4;
+        /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+        grid-row: 3 / 3;
+        /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+    }
+    .destaques__secundario:nth-child(5) {
+        display: flex;
+        grid-column: 3 / 3;
+        /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+        grid-row: 3 / 3;
+        /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+    }
+    .destaques__categorias {
+        grid-column: 1 / 3;
+    }
+    .populares__conteudo {
+        flex-direction: row;
+    }
+    .populares__card {
+        grid-template-rows: 173px auto;
+        /* Definindo o tamanho das linhas, a primera terá o tamanho de 173px e a segunda auto*/
+        margin-right: 1rem;
+        /* Espaçamento externo de uma linha */
+        width: calc(20% - 1rem);
+        /* Definindo a largura dos cards em 20% menos 1rem da tela, com isso irá gerar um espaçamento entre os cards */
+        margin-right: 1rem;
+    }
+}
+
+
+/* Se o site for menor que 992 no caso celulares vai mudar a cor */
+
+@media screen and(min-width: 992px) {
+    .cabecalho {
+        background: blue;
+    }
+}
+
+
+/* Se o site for menor que 1200 no caso celulares vai mudar a cor */
+
+@media screen and (min-width: 1200px) {
+    .cabecalho {
+        background: black;
+    }
+}
