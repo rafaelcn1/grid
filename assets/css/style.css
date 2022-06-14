@@ -22,6 +22,9 @@
     Colocado um backgroud para melhor visualizar */
     grid-area: "cabecalho";
     /* Informando para o Grid que um cabeçalho é de fato um cabeçalho e deve se relacionar com a classe cabecalho, conforme definido no grid-template-areas na classe pai app*/
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
 }
 
 .conteudo {
