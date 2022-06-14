@@ -1,0 +1,12 @@
+.destaques {
+    display: grid;
+    /* A classe .destaque estão dizendo que ela será do tipo grid */
+    grid-template-columns: 25% 25% 25% 25%;
+    /* Estamos dizendo que o grid terá 4 colunas com o tamanho de 25% cada, conforme a tela do site ser o total de 100% */
+    grid-template-rows: 33% 33% 33%;
+    /* Estamos dizendo que o grid terá 3 linhas, cada um 33% do tamanho total do site */
+    height: calc(100vh - 50px);
+    /* Estamos dizendo que o tamanho do grid vai ser 100% o tamanho do site, menos 50px acima, que será o nosso cabeçalho */
+    background: red;
+    /* Colocando um cor para melhorar os ajustes */
+}

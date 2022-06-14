@@ -1,0 +1,39 @@
+/* O CSS Grid Layout é muito utilizado por possuir essa facilidade: podemos definir um template, estabelecermos áreas e associar elementos específicos a estas áreas. */
+
+
+/* Será a classe "pai" para nossos elementos, utilizando o <body>, que se comportará como grid */
+
+.app {
+    background: #f1f1f1;
+    display: grid;
+    /* Iniciando como grid */
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
+    /* Devemos definir as áreas na ordem que devem estar posicionadas na página, a definição foi feita na ordem correta. */
+    /* Para definifir as áreas, recebendo o nome das classes do nosso projeto, cabecalho, conteudo e rodape*/
+    grid-template-columns: auto;
+    /*  especificar qual será o tamanho das colunas, no nosso projeto será auto */
+    grid-template-rows: 50px 100vh auto;
+    /* especificar qual será o tamanho das linhas, usando três valores, devido ter passado apenas 3 áreas, no caso o "cabecalho" "conteudo" "rodape"  */
+}
+
+.cabecalho {
+    /* background: green;
+    Colocado um backgroud para melhor visualizar */
+    grid-area: "cabecalho";
+    /* Informando para o Grid que um cabeçalho é de fato um cabeçalho e deve se relacionar com a classe cabecalho, conforme definido no grid-template-areas na classe pai app*/
+}
+
+.conteudo {
+    /* background: red;
+    /* Colocado um backgroud para melhor visualizar */
+    grid-area: "conteudo";
+    /* Informando para o Grid que um conteudo é de fato um conteudo e deve se relacionar com a classe conteudo, conforme definido no grid-template-areas na classe pai app*/
+}
+
+.rodape {
+    /* background: blue;
+    /* Colocado um backgroud para melhor visualizar */
+    grid-area: "rodape";
+    /* Informando para o Grid que um rodape é de fato um rodape e deve se relacionar com a classe rodape, conforme definido no grid-template-areas na classe pai app*/
+}
