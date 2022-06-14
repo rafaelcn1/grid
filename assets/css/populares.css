@@ -1,0 +1,54 @@
+.populares {
+    padding: 3rem 0;
+}
+
+.populares__conteudo {
+    display: flex;
+    /* A classe pai será do tipo flex */
+    flex-wrap: wrap;
+    /* O flex irá ter quebra automatica */
+    padding: 1rem 0;
+    /* Com espaçamento de 1 linha vertical e 0 na horizontal */
+}
+
+.populares__card {
+    background: #fdfdfdfd;
+    display: grid;
+    /* Definindo como grid */
+    grid-template: "card-imagem" "card-corpo";
+    /* Criando o nome dos templates */
+    grid-template-columns: 100%;
+    /* Defenindo o tamanho da coluna */
+    grid-template-rows: 173px auto;
+    /* Definindo o tamanho das linhas, a primera terá o tamanho de 173px e a segunda auto*/
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    /* Espaçamento externo de uma linha */
+    width: calc(20% - 1rem);
+    /* Definindo a largura dos cards em 20% menos 1rem da tela, com isso irá gerar um espaçamento entre os cards */
+}
+
+.populares__card___imagem {
+    grid-area: card-imagem;
+    /* Definindo onde vai ficar a area do grid */
+    height: 100%;
+    /* Definindo a altura da area */
+    width: 100%;
+    /* Definindo a largura da area */
+}
+
+
+/* Vamos definir que o card corpo também será um grid*/
+
+.populares__card___corpo {
+    display: grid;
+    /* Informando que será um grid */
+    grid-template-areas: "card-cabecalho" "card-conteudo";
+    /* Definindo as areas do template */
+    grid-template-rows: 50px auto;
+    grid-gap: .2rem;
+    /* Espaçamento de uma linha para outra */
+    /* Definindo a quanidade de linhas, no caso serão 2, a primeira com 50px e a segunda automatico */
+    padding: .75rem;
+    /* Espaçamento interno */
+}
