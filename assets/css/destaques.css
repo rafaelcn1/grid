@@ -9,6 +9,21 @@
     /* Estamos dizendo que o tamanho do grid vai ser 100% o tamanho do site, menos 50px acima, que será o nosso cabeçalho */
     /*background: red;
      Colocando um cor para melhorar os ajustes */
+    grid-gap: .2rem;
+    /* Espaçamento entre uma linha para outra e uma coluna para outra */
+}
+
+.destaques__titulo {
+    background: rgba(0, 0, 0, .5);
+    /* Cor preta e opaco 5% */
+    color: white;
+    /* Cor branca */
+    padding: .6rem;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento */
+    width: 100%;
+    /* Largura */
 }
 
 .destaques__principal {
@@ -82,8 +97,46 @@
     /* Informando que a imagem de background ficará com a posição centralizada */
     /* Informando que a imagem de background preencha todo espaço reservado a ela */
     /* Informando que a imagem de background não se repita */
-    grid-column: 2 / 2;
+    grid-column: 3 / 3;
     /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
     grid-row: 3 / 3;
     /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+}
+
+.destaques__categorias {
+    grid-column: 1 / 3;
+    /* Iniciando na coluna 1 até a coluna 3*/
+    grid-row: 3 / 3;
+    /* Iniciando na linha 3 e terminando na linha 3 */
+}
+
+.destaques__categorias___lista {
+    display: flex;
+    /* Informando que que a categória é do tipo flex*/
+    flex-wrap: wrap;
+    /* Terá quebra de linha automática, quando preencher todo o tamanho */
+    height: 100%;
+    /* Tamanho de 100% da div */
+    justify-content: space-between;
+    /* Justificando o conteudo com o espaço entre eles (os elementos) */
+}
+
+.destaques__categorias___item {
+    background-color: white;
+    /* Cor de fundo branco */
+    display: flex;
+    /* tido flex */
+    align-items: center;
+    /* Alinhamento do item centralizado, apenas será usado pq é um elemento do tipo flex */
+    border-left: 5px solid transparent;
+    /* A borda a esquerda é de 5px de grossura, solida e transparente*/
+    padding: 1rem;
+    /* Espaçamento */
+    width: 50%;
+    /* largura do item */
+}
+
+.destaques__categorias___link {
+    color: inherit;
+    /* Herdando a cor do pai */
 }
