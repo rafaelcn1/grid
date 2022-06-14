@@ -7,6 +7,83 @@
     /* Estamos dizendo que o grid terá 3 linhas, cada um 33% do tamanho total do site */
     height: calc(100vh - 50px);
     /* Estamos dizendo que o tamanho do grid vai ser 100% o tamanho do site, menos 50px acima, que será o nosso cabeçalho */
-    background: red;
-    /* Colocando um cor para melhorar os ajustes */
+    /*background: red;
+     Colocando um cor para melhorar os ajustes */
+}
+
+.destaques__principal {
+    background-image: url("../img/fortnite.jpg");
+    /* Definidindo uma imagem como background */
+    grid-column-start: 1;
+    /* Informando que o background-image: iniciara na coluna 1 */
+    grid-column-end: 4;
+    /* Informando que o background-image: acabará na coluna 4, então ela vai acabar na coluna 3 e não na 4 */
+    grid-row-start: 1;
+    /* Informando que o background-image: iniciara na linha 1 */
+    grid-row-end: 3;
+    /* Informando que o background-image: acabará na linha 3, então ela vai acabar na coluna 2 e não na 3 */
+    background-repeat: no-repeat;
+    /* Informando que a imagem de background não se repita */
+    background-size: cover;
+    /* Informando que a imagem de background preencha todo espaço reservado a ela */
+    background-position: center;
+    /* Informando que a imagem de background ficará com a posição centralizada */
+}
+
+.destaques__secundario:nth-child(2) {
+    /* Será aplicado apenas no filho na posição 2 da classe destaques__secundario*/
+    background-image: url("../img/pubg.jpg");
+    /* Definidindo uma imagem como background */
+    grid-column: 4 / 4;
+    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+    grid-row: 1 / 1;
+    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+    background-repeat: no-repeat;
+    /* Informando que a imagem de background não se repita */
+    background-size: cover;
+    /* Informando que a imagem de background preencha todo espaço reservado a ela */
+    background-position: center;
+    /* Informando que a imagem de background ficará com a posição centralizada */
+}
+
+
+/* Usando atalhos para não precisar ficar repetindo codigo, podemos usar a propriedade background */
+
+.destaques__secundario:nth-child(3) {
+    /* Será aplicado apenas no filho na posição 3 da classe destaques__secundario*/
+    background: url('../img/slack.png') center / cover no-repeat;
+    /* Definidindo uma imagem como background */
+    /* Informando que a imagem de background ficará com a posição centralizada */
+    /* Informando que a imagem de background preencha todo espaço reservado a ela */
+    /* Informando que a imagem de background não se repita */
+    grid-column: 4 / 4;
+    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+    grid-row: 2 / 2;
+    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+}
+
+.destaques__secundario:nth-child(4) {
+    /* Será aplicado apenas no filho na posição 3 da classe destaques__secundario*/
+    background: url("../img/whatsapp.png") center / cover no-repeat;
+    /* Definidindo uma imagem como background */
+    /* Informando que a imagem de background ficará com a posição centralizada */
+    /* Informando que a imagem de background preencha todo espaço reservado a ela */
+    /* Informando que a imagem de background não se repita */
+    grid-column: 4 / 4;
+    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+    grid-row: 3 / 3;
+    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
+}
+
+.destaques__secundario:nth-child(5) {
+    /* Será aplicado apenas no filho na posição 3 da classe destaques__secundario*/
+    background: url("../img/cs-go.jpg");
+    /* Definidindo uma imagem como background */
+    /* Informando que a imagem de background ficará com a posição centralizada */
+    /* Informando que a imagem de background preencha todo espaço reservado a ela */
+    /* Informando que a imagem de background não se repita */
+    grid-column: 2 / 2;
+    /* Estamos falando que a imagem irá iniciar na coluna com posição 4 e acabará na posição 4, não precisando usar o grid-column-start e nem o grid-column-end */
+    grid-row: 3 / 3;
+    /* Estamos falando que a imagem irá iniciar na llinha com posição 1 e acabará na posição 1, não precisando usar o grid-row-start e nem o grid-row-end */
 }
